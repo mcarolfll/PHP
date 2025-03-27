@@ -37,3 +37,115 @@ $nome = "João";
 $sobrenome = "Silva";
 echo "Nome Completo": ". $nome ." ". $sobrenome;
 ?>
+
+
+-------------------- ATIVIDADE -----------------------
+1)
+<?php
+$real = 20;
+$dolar = $real * 5.5;
+echo $dolar;
+?>
+
+2)
+<?php
+$ano_nascimento=2009;
+$idade_atual=16;
+echo $idade_atual;
+?>
+<?php
+ $nome="Gabi";
+ echo $nome;
+ ?>
+<?php
+ $tem_18 = false;
+if($tem_18){
+
+3)
+<?php
+$salario = 1200;
+$prestacao = 500;
+if ($prestacao > 0.2 * $salario ) {
+echo "Seu emprestimo não pode ser concebido";
+} else{
+echo "Seu emprestimo pode ser concebido";
+}
+?>
+
+4)
+
+
+5)
+<?php
+$peso = 60;
+$altura = 1.70;
+$quadradodaaltura = $altura * $altura;
+$imc = $peso/$quadradodaaltura;
+if ($imc < 20) {
+echo "Você está abaixo do peso";
+} else if($imc > 19 && $imc < 26) {
+echo "Peso ideal";
+}else if($imc > 25 && $imc < 31){
+echo "Sobre Peso";
+} elseif ($imc > 30 && $imc < 41){
+echo "Obeso(a)";
+}
+else {
+echo "Sobre Peso";
+}
+?>
+
+6)
+<?php
+$idade = 68;
+if ($idade < 16) {
+echo"Não eleitor";
+} else if ($idade > 17 && $idade < 66){
+echo"Eleitor obrigatorio";
+} else{
+echo "Eleitor facultativo";
+}
+?>
+
+7)
+<?php
+$custofabrica = 40000;
+$prevendedor = $custofabrica * 0.25;
+$impostos = $custofabrica * 0.40;
+$ValorDeMercado = $custofabrica + $prevendedor + $impostos;
+echo "O valor de mercado do carro é : " . $ValorDeMercado;
+?>
+
+8)
+<?php
+$salariofixo  = 1200;
+$comissao_valor_de_vendas = 20000 * 0.15 ;
+$salariototal = $comissao_valor_de_vendas+ $salariofixo;
+echo "Seu salario total com a comissão é de: ". $salariototal;
+?>
+
+9)
+<?php
+$idadeanos = 15;
+$idadem = 6;
+$idadedias = $idadem*30 + ($idadeanos*12)*30;
+echo "A sua idade em dias é de " . $idadedias;
+?>
+
+10)
+<?php
+$ms = 100;
+$km = 100*3.6;
+echo"O valor de metros agora em kilometros é: ". $km;
+?>
+
+11)
+<?php
+$salario = 1200;
+$desconto = $salario * 0.11;
+if ($desconto > 334.29) {
+    $desconto = 334.29;
+}
+$salariodescontado = $salario + $desconto;
+echo "O valor total com o desconto de até no maximo 334,29 é de: ". $salariodescontado;
+?>
