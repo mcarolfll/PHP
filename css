@@ -1,0 +1,36 @@
+body{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+background-color: rgb(179, 210, 239);
+}
+
+h3{
+font-style: oblique;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Arial, sans-serif;
+
+}
+h1{
+text-align: center;
+background-color: rgba(66, 99, 161, 0.642);
+color: rgb(255, 255, 255);
+}
+
+input{
+border-radius:6px ;
+background-color: rgba(238, 233, 233, 0.705);
+
+}
+
+button{
+    padding: 12px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #30475E; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    
+
+
+
+
+}
