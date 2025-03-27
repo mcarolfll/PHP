@@ -1,1 +1,23 @@
+<?php 
+// criando a variavel nome e instanciando ela
+//$nome = "carol";
+// imprimindo a variavel
+//echo $nome;
 
+//Array indexado
+$frutas = ["Maca", "Banana", "Laranja"];
+echo $frutas[1]. "<br>" ."<br>";
+
+//Arrays associativo
+$idade = ["ana" => 20, "joao" => 25];
+echo $idade["joao"]. "<br>" . "<br>";
+
+//Array multidimensional
+$alunos = [
+["nome" => "carlos", "nota" => 7],
+["nome" => "maria" , "nota" => 9]
+];
+
+echo $alunos[1] ["nome"]. "<br>";
+
+?>
