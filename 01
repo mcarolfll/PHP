@@ -1,1 +1,39 @@
+<?php
+echo "Olá, mundo";
+?>
 
+//string
+<?php
+$nome = "Ana";
+echo $nome;
+?>
+
+//Variavel inteira e operação matemática
+<?php
+$idade = 25;
+$ano_futuro = $idade + 5;
+echo $ano_futuro;
+?>
+
+// variável float
+<?php
+$altura = 1.65;
+echo "Altura: " . $altura . "m";
+?>
+
+// Variavel booleana (verdadeiro ou falso)
+<?php
+$tem_carteira = true;
+if($tem_carteira){
+echo "Pode dirigir";        
+} else {
+echo "Não pode dirigir";
+}
+?>
+
+// Concatenando variáveis com .
+<?php
+$nome = "João";
+$sobrenome = "Silva";
+echo "Nome Completo": ". $nome ." ". $sobrenome;
+?>
