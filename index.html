@@ -3,32 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Alunos</title>
 </head>
 <body>
-    
-<form action="cadastro.php" method="POST">
 
-<label for = "" >Nome: </label>
-<input type="text" name = "nome">
-</br>
-
-<label for = "" >Sobrenome: </label>
-<input type="text" name = "sobrenome">
-</br>
-
-<label for = "" >E-mail: </label>
-<input type="text" name = "email">
-</br>
-
-<label for = "" >Senha: </label>
-<input type="password" name = "senha">
-</br>
-
-<button>Cadastar</button>
+    <form action="cadastro.php" method="POST">
 
 
-</form>
+        <label for = "" >Nome do Aluno: </label>
+        <input type="text" name = "nome">
+        </br>
+        
+        <label for = "" >Data de Nascimento: </label>
+        <input type="text" name = "nascimento">
+        </br>
+        
+        <label for = "" >E-mail: </label>
+        <input type="text" name = "email">
+        </br>
+        
+        
+        <label for = "" >Serie do Aluno: </label>
+        <input type="text" name = "serie">
+        </br>
+        
+        <button>Cadastar Aluno</button>
+
+    </form>
 
 </body>
 </html>

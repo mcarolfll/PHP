@@ -2,15 +2,15 @@
 include ("conexao.php");
 
 $nome=$_POST['nome'];
-$sobrenome=$_POST['sobrenome'];
+$nascimento=$_POST['nascimento'];
 $email=$_POST['email'];
-$senha=$_POST['senha'];
+$serie=$_POST['serie'];
 
-$sql="INSERT INTO cadastro(nome,sobrenome,email, senha)
-VALUES ('$nome', '$sobrenome' , '$email' ,'$senha')";
+$sql="INSERT INTO alunos(nome,nascimento,email, serie)
+VALUES ('$nome', '$nascimento' , '$email' ,'$serie')";
 
 if (mysqli_query ($conexao,$sql)) {
-   echo "usuario cadastro com sucesso";
+   echo "Aluno cadastrado com sucesso!";
 } else {
     echo "erro" . mysqli_connect_erro($conexao);
 }
