@@ -158,6 +158,9 @@ die("houve um erro:" . mysqli_connect_erro());
 
 CADASTRO -----------------------
 
+<link rel="stylesheet" href="style.css">
+
+
 <?php
 include ("conexao.php");
 
