@@ -11,7 +11,8 @@ $sql = "SELECT * FROM candidato";
 $result = mysqli_query($conexao, $sql);
 ?>
 
-
+<a href="candidato.html"><button>voltar</button></a>
+<a href="editar.php"><button>Editar</button></a>
 
 <div class="tabela">
     <h2>Lista de Candidatos Cadastrados </h2>
@@ -26,7 +27,7 @@ $result = mysqli_query($conexao, $sql);
       </tr>
       <?php while($row = mysqli_fetch_assoc($result)) { ?>
         <tr>
-          
+        <td><?php echo $row['id_candidato']; ?></td>
           <td><?php echo $row['nome']; ?></td>
           <td><?php echo $row['email']; ?></td>
           <td><?php echo $row['telefone']; ?></td>
