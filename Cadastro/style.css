@@ -1,0 +1,108 @@
+body {
+  font-family: "Chakra Petch", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start; /* imagem vai ficar mais pra baixo */
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 50px;
+  gap: 40px;
+}
+
+.texto {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  color: #ffffff;
+  background-color: #234aa0;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #234aa0;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1c3b80;
+}
+
+.img {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  height: 500px;
+  background-image: url(./atv.avif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin-top: 100px; /* empurra a imagem mais para baixo */
+  margin-left: auto;  /* garante que ela vá pro canto direito */
+}
+
+footer {
+  background-color: #234aa0;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .img {
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+    padding: 20px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .img {
+    height: 300px;
+  }
+}
