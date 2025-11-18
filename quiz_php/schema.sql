@@ -1,4 +1,4 @@
--- Script completo para preparar a base do quiz
+
 DROP DATABASE IF EXISTS quiz;
 CREATE DATABASE quiz CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE quiz;
@@ -36,11 +36,12 @@ CREATE TABLE resposta_usuario (
     CONSTRAINT fk_resp_pergunta FOREIGN KEY (id_pergunta) REFERENCES pergunta(id_pergunta) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Questões de exemplo
+
 INSERT INTO pergunta (titulo, alternativa_a, alternativa_b, alternativa_c, alternativa_d, resposta_correta, valor)
 VALUES
 ('Qual é o resultado de 2 + 2?', '3', '4', '5', '6', 'B', 1),
 ('Quem escreveu Dom Casmurro?', 'Machado de Assis', 'José de Alencar', 'Clarice Lispector', 'Graciliano Ramos', 'A', 1),
 ('Qual linguagem roda no navegador?', 'PHP', 'Python', 'JavaScript', 'SQL', 'C', 1),
 ('Qual comando cria uma base no MySQL?', 'CREATE DATABASE', 'MAKE DATABASE', 'NEW DATABASE', 'INIT DATABASE', 'A', 1);
+
 
