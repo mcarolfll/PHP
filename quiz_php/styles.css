@@ -1,0 +1,126 @@
+:root {
+    font-family: Arial, sans-serif;
+    color: #1c1c1c;
+}
+
+body {
+    background: #f4f6fb;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 1px solid #d2d2d2;
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #fff;
+    width: min(420px, 90vw);
+    margin: 60px auto;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.input-field label {
+    position: absolute;
+    color: #8d8d8d;
+    pointer-events: none;
+    background-color: #fff;
+    left: 16px;
+    padding: 0 4px;
+    top: -10px;
+    font-size: 0.78rem;
+}
+
+.input-field input {
+    padding: 14px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #b8b8b8;
+    width: 100%;
+    outline: none;
+}
+
+.input-field input:focus {
+    border-color: #0034de;
+    box-shadow: 0 0 0 2px rgba(0, 52, 222, 0.15);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background: linear-gradient(135deg, #0034de, #006eff);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 0.92;
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.alert {
+    background: #fff8db;
+    border: 1px solid #ffd369;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.quiz-card {
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #fff;
+}
+
+.quiz-card h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 8px 12px;
+    border: 1px solid #e1e1e1;
+}
+
+table th {
+    background: #f0f4ff;
+    text-align: left;
+}
+

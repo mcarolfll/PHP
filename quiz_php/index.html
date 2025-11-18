@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<form action="cadastro.php" method="POST">
+    <div class="container">
+        <div class="heading">Cadastre-se</div>
+
+        <div class="form">
+            <div class="input-field">
+                <label for="nome">Nome do usuário</label>
+                <input type="text" name="nome" id="nome" required autocomplete="off">
+            </div>
+
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required autocomplete="off">
+            </div>
+
+            <div class="input-field">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required autocomplete="off" minlength="6">
+            </div>
+
+            <button class="btn" type="submit">Cadastrar</button>
+
+            <div class="message">
+                Já possui conta? <a href="login.php">Faça login</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>
